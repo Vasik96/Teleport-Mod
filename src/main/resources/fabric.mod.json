@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "teleportmod",
+  "version": "${version}",
+  "name": "TeleportMod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/leman/TeleportMod"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/teleportmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.example.teleportmod.teleportmod.client.TeleportModClient"
+    ]
+  },
+  "mixins": [
+    "teleportmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
